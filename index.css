@@ -1,0 +1,103 @@
+/* Applies to ALL elements */
+* {
+    font-family: 'Verdana';
+}
+
+/* Variables */
+:root {
+    /* color variables */
+    --main-background-color: white; 
+    --complementary-color-0: white; 
+    --complementary-color-1: cornsilk; 
+    --complementary-color-2: blue; 
+    
+    /* formatting variables */
+    --center-elements-padding: 10px; 
+    --center-elements-margin: auto; 
+    --center-elements-width: 50%; 
+
+    --hr-line-offset: 25%; 
+}
+
+/* Native */
+
+h2 {
+    text-align: center;
+    padding: var(--center-elements-padding);
+    width: var(--center-elements-width);
+    margin: var(--center-elements-margin);
+}
+
+h3 {
+    text-align: center;
+    background-color: var(--complementary-color-1);
+    padding: var(--center-elements-padding);
+    width: var(--center-elements-width);
+    margin: var(--center-elements-margin); 
+}
+
+ol li {
+    padding-bottom: 10pt;
+}
+
+ul li {
+    padding-bottom: 10pt;
+}
+
+body {
+    background-color: var(--main-background-color)
+}
+
+/* Custom  */
+
+hr.thick {
+    border-image-slice: 1;
+    border-image-source: linear-gradient(
+        to right, 
+        transparent, 
+        var(--complementary-color-2) calc(50% - var(--hr-line-offset)),
+        var(--complementary-color-2) calc(50% + var(--hr-line-offset)),
+        transparent    
+    );
+}
+
+div.title {
+    /*border: 10px outset black;*/ 
+    background-color: white;
+    text-align: center;
+}
+
+div.flexbox {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--complementary-color-1);
+    padding: var(--center-elements-padding);
+    width: var(--center-elements-width);
+    margin: var(--center-elements-margin); 
+}
+
+div.flexbox .element {
+    padding: 10px;
+    flex-grow: 1; 
+    text-align:
+}
+
+
+.element img {
+    height: 200px;
+    width: 200px; 
+}
+
+.left {
+    text-align: left;
+}
+
+.middle 
+{
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
