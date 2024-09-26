@@ -1,0 +1,105 @@
+/* Applies to ALL elements */
+* {
+    font-family: 'Verdana';
+}
+
+/* Variables */
+:root {
+    /* color variables */
+    --main-background-color: #333333; 
+}
+
+body {
+    background-color: var(--main-background-color);
+}
+
+body:after {
+    position: absolute;
+    height: 0; 
+    width: 0; 
+    overflow: hidden;
+    z-index: -1;
+    content: url(../images/In-Blue-21.png)
+}
+
+a {
+    cursor: pointer;
+}
+
+.header-main {
+    height: 60px; 
+    width: 100%;
+    background-color: #ffffff; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-main-logo {    
+    height: 100%;
+    width: fit-content;
+    padding-left: 30px; 
+    display: flex; 
+}
+
+.header-main-logo img {
+    height: 30px;  
+    align-self: center;
+}
+
+.header-main-nav { 
+    height: 100%; 
+    width:fit-content; 
+    display: flex; 
+    align-items: center;
+}
+
+.header-main-nav ul {
+    list-style: none;
+    margin-left: 30px;
+}
+
+.header-main-nav ul li {
+    display: inline;
+    float: left;
+}
+
+.header-main-nav ul li a {
+    padding: 0 15px;
+    line-height: 60px;
+    color: #000;
+    display: block;
+}
+
+.header-main-nav ul li a:hover {
+    color:#ff0000;
+}
+
+.header-main-sm { 
+    height: 100%;
+    width: fit-content;    
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.header-main-sm-linkedin {
+    height: 25px;
+    width: 25px;
+    background-image: url(../images/In-Black-21.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-main-sm-linkedin:hover {
+    background-image: url(../images/In-Blue-21.png);
+}
+
+.header-main-sm-github {
+    height: 25px;
+    width: 25px;
+    background-image: url(../images/github-mark.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
