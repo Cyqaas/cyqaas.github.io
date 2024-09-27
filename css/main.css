@@ -1,12 +1,18 @@
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/Raleway-VariableFont_wght.ttf);
+}
+
 /* Applies to ALL elements */
 * {
-    font-family: 'Verdana';
+    font-family: Raleway, Arial, Helvetica, sans-serif;
 }
 
 /* Variables */
 :root {
     /* color variables */
-    --main-background-color: #333333; 
+    --main-background-color: #333333;
+    --site-color-1: #ff0000;  
 }
 
 body {
@@ -32,6 +38,7 @@ a {
     background-color: #ffffff; 
     display: flex;
     justify-content: space-between;
+    z-index: 1000;
 }
 
 .header-main-logo {    
@@ -80,7 +87,7 @@ a {
     padding-right: 30px;
     display: flex;
     align-items: center;
-    gap: 20px; 
+    column-gap: 20px; 
 }
 
 .header-main-sm-linkedin {
