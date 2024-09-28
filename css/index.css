@@ -1,3 +1,4 @@
+/* Main Section  */
 main {
     height: calc(100vh - 60px);
     width: 100%;
@@ -52,4 +53,72 @@ main .main-quotes p {
 
 main .main-quotes p:nth-child(2) {
     margin-left: 10vh; 
+}
+
+/* Categories Section */
+.categories-main { 
+    width: 100%; 
+    padding: 2.5vh 0; 
+    background-color: #fff;
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 2vh; 
+    z-index: 100;
+}
+
+.categories-main-box {
+    height: 10vh;
+    width: 15vh;
+    background-color: #ff0000; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+}
+
+.categories-main-box:nth-child(2)
+{
+    background-image: url(../images/projects.jpg);
+}
+
+.categories-main-box:nth-child(3)
+{
+    background-image: url(../images/programming-challenges.jpg);
+}
+
+
+.categories-main p {
+    font-size: 20px; 
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+    flex-basis: 100%;
+}
+
+.categories-main h3 {
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: -2px 2px 4px #000;
+    z-index: 100; 
+}
+
+.dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; 
+    bottom: 0;
+    background-color: #000; 
+    opacity: 0.5;
+    transition: all ease-in-out 200ms;
+}
+
+.categories-main-box:hover .dark-overlay 
+{
+    opacity: 0; 
 }
