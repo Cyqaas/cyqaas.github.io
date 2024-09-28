@@ -1,3 +1,5 @@
+/* overriding some defualt styles */
+
 /* Main Section  */
 main {
     height: calc(100vh - 60px);
@@ -7,7 +9,7 @@ main {
     background-image: url(../images/background-5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top, center;
+    background-position: center;
     display: flex; 
     align-items: center;
     justify-content: center;
@@ -16,13 +18,14 @@ main {
 
 main .main-intro {
     position: relative; 
-    right: 35vh; 
+    right: 45vh; 
     width: fit-content; 
 }
 
 main .main-quotes {
     position: relative;
     left: 15vh;
+    width: fit-content
 }
 
 main .main-intro h1 {
@@ -39,10 +42,14 @@ main p {
 
 main a {
     width: fit-content;
-    font-size: 18px; 
+    font-size: 18px;
+    background-color: var(--site-color-1); 
     display: block; 
-    background-color: var(--site-color-1);
     padding: 10px 20px;
+}
+
+main a:hover {
+    background-color: var(--site-color-1-hover)
 }
 
 main .main-quotes p {
@@ -56,10 +63,13 @@ main .main-quotes p:nth-child(2) {
 }
 
 /* Categories Section */
-.categories-main { 
+.index-categories-main { 
     width: 100%; 
     padding: 2.5vh 0; 
     background-color: #fff;
+    font-size: 20px; 
+    text-align: center;
+    text-transform: uppercase;
     display: flex; 
     justify-content: center;
     flex-wrap: wrap;
@@ -67,7 +77,7 @@ main .main-quotes p:nth-child(2) {
     z-index: 100;
 }
 
-.categories-main-box {
+.index-categories-main-box {
     height: 10vh;
     width: 15vh;
     background-color: #ff0000; 
@@ -79,29 +89,27 @@ main .main-quotes p:nth-child(2) {
     position: relative; 
 }
 
-.categories-main-box:nth-child(2)
+.index-categories-main-box:nth-child(2)
 {
     background-image: url(../images/projects.jpg);
 }
 
-.categories-main-box:nth-child(3)
+.index-categories-main-box:nth-child(3)
 {
     background-image: url(../images/programming-challenges.jpg);
 }
 
 
-.categories-main p {
-    font-size: 20px; 
-    text-align: center;
-    text-transform: uppercase;
+.index-categories-main p {
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;
     padding-bottom: 40px;
     flex-basis: 100%;
 }
 
-.categories-main h3 {
+.index-categories-main h3 {
     font-size: 20px;
-    text-align: center;
-    text-transform: uppercase;
     color: #fff;
     text-shadow: -2px 2px 4px #000;
     z-index: 100; 
@@ -118,7 +126,80 @@ main .main-quotes p:nth-child(2) {
     transition: all ease-in-out 200ms;
 }
 
-.categories-main-box:hover .dark-overlay 
+.index-categories-main-box:hover .dark-overlay 
 {
     opacity: 0; 
+}
+
+.index-about-me-main {
+    width: 100;
+    padding: 2.5vh 0;
+    color: #fff;
+    background-color: var(--site-color-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 4vh;
+}
+
+.index-about-me-main img {
+    width: 300px;
+    border-radius: 300px;
+}
+
+.index-about-me-text {
+    flex-basis: 350px;
+}
+
+.index-about-me-text a {
+    width: fit-content;
+    font-size: 18px; 
+    display: block; 
+    background-color: var(--site-color-1);
+    padding: 10px 20px;
+}
+
+.index-about-me-text a:hover {
+    background-color: var(--site-color-1-hover);
+}
+
+.index-about-me-text p {
+    padding: 1vh 0;
+}
+
+.index-about-me-skills {
+    flex-basis: 350px;
+}
+
+.index-about-me-skills p {
+    padding: 0.25vh 0;
+}
+
+.index-about-me-skills-bar {
+    height: 20px;
+    width: 100%;
+    border: 4px solid #000;
+}
+
+
+.index-about-me-skills-fill {
+    width: 100%; 
+    height: 100%;
+    background-color: var(--site-color-1);
+}
+
+.htmlcss {
+    width: 45%;
+}
+.javascript {
+    width: 45%;
+}
+.candcplusplus {
+    width: 80%;
+}
+.csharp {
+    width: 85%;
+}
+.java {
+    width: 75%;
 }
