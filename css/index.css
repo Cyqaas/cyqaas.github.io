@@ -10,20 +10,25 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    z-index: 100;
+}
+
+main .main-flex {
     display: flex; 
     align-items: center;
     justify-content: center;
-    z-index: 100;
 }
 
 main .main-intro {
     position: relative; 
+    top: 15vh;
     right: 45vh; 
     width: fit-content; 
 }
 
 main .main-quotes {
     position: relative;
+    top: 15vh;
     left: 15vh;
     width: fit-content
 }
@@ -70,11 +75,14 @@ main .main-quotes p:nth-child(2) {
     font-size: 20px; 
     text-align: center;
     text-transform: uppercase;
+    z-index: 100;
+}
+
+.index-categories-flex {
     display: flex; 
     justify-content: center;
     flex-wrap: wrap;
     column-gap: 2vh; 
-    z-index: 100;
 }
 
 .index-categories-main-box {
@@ -131,11 +139,16 @@ main .main-quotes p:nth-child(2) {
     opacity: 0; 
 }
 
+/* About Me section */
+
 .index-about-me-main {
     width: 100;
     padding: 2.5vh 0;
     color: #fff;
     background-color: var(--site-color-2);
+}
+
+.index-about-me-flex {
     display: flex;
     align-items: center;
     justify-content: center;
