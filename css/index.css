@@ -34,20 +34,18 @@ main .main-quotes {
 }
 
 main .main-intro h1 {
-    font-size: 96px;
+    font-size: 9.6rem;
     line-height: 106px; 
     margin-bottom: 30px;
 }
 
 main p {
-    font-size: 18px;
     line-height: 30px; 
     margin-bottom: 30px; 
 }
 
 main a {
     width: fit-content;
-    font-size: 18px;
     background-color: var(--site-color-1); 
     display: block; 
     padding: 10px 20px;
@@ -72,7 +70,6 @@ main .main-quotes p:nth-child(2) {
     width: 100%; 
     padding: 2.5vh 0; 
     background-color: #fff;
-    font-size: 20px; 
     text-align: center;
     text-transform: uppercase;
     z-index: 100;
@@ -108,17 +105,13 @@ main .main-quotes p:nth-child(2) {
 }
 
 
-.index-categories-main p {
-    font-size: 20px;
+.index-categories-main-h3-title {
     color: #000;
-    font-weight: 500;
     padding-bottom: 40px;
     flex-basis: 100%;
 }
 
-.index-categories-main h3 {
-    font-size: 20px;
-    color: #fff;
+.index-categories-main-box h3 {
     text-shadow: -2px 2px 4px #000;
     z-index: 100; 
 }
@@ -166,7 +159,6 @@ main .main-quotes p:nth-child(2) {
 
 .index-about-me-text a {
     width: fit-content;
-    font-size: 18px; 
     display: block; 
     background-color: var(--site-color-1);
     padding: 10px 20px;
