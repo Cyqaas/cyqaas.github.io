@@ -6,7 +6,7 @@ main {
     width: 100%;
     color: #fff;
     background-color: #333333;
-    background-image: url(../images/background-5.jpg);
+    background-image: url(../images/background-9.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -41,7 +41,8 @@ main .main-intro h1 {
 
 main p {
     line-height: 2; 
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
+    max-width: 400px;
 }
 
 main a {
@@ -207,4 +208,93 @@ main .main-quotes p:nth-child(2) {
 }
 .java {
     width: 75%;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 600px) {
+
+    main {
+        align-items: flex-end;
+    }
+
+    main .main-quotes {
+        display: none;
+    }
+
+    main .main-intro {
+        top: 5vh;
+        right: 0vh;
+        padding-bottom: 8vh;
+    }
+
+    main .main-intro h1 {
+        font-size: 5rem;
+        line-height: 1.25; 
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    main p {
+        text-align: center;
+        padding: 0 20px;
+    }
+    
+    main a {
+        margin: 30px auto; 
+    }
+    
+
+    /* Categories Section */
+    .index-categories-main { 
+        padding: 2vh 0; 
+    }
+    
+    .index-categories-flex {
+        flex-wrap: wrap;
+        row-gap: 1vh; 
+    }
+    
+    .index-categories-main-box {
+        height: 20vh;
+        width: 100%;
+    }
+    
+    .index-categories-main-h3-title {
+        padding-bottom: 5px;
+    }
+
+    /* About Me Section */
+    .index-about-me-flex {
+        flex-wrap: wrap;
+        row-gap: 4vh;
+    }
+    
+    .index-about-me-main img {
+        width: 60%;
+    }
+    
+    .index-about-me-text {
+        flex-basis: 100%;
+    }
+    
+    .index-about-me-text a {
+        margin: 0 auto; 
+    }
+    
+    .index-about-me-text p {
+        text-align: center;
+        padding-bottom: 2vh;
+    }
+    
+    .index-about-me-text h3 {
+        text-align: center;
+    }
+    
+    .index-about-me-skills p {
+        text-align: center;
+    }
+
+    .index-about-me-skills {
+        padding-bottom: 2vh;
+    }
 }
