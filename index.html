@@ -11,21 +11,11 @@
 </head>
 <body>
 
-    <!-- Burger Menu Start -->
-    <nav class="burger-menu">
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="#">PROJECTS</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">CONTACT</a></li>
-        </ul>
-    </nav>
-
     <!-- Navigational header across all pages -->
     <header class="header-main"> 
         <div class="header-main-logo">
             <!-- placeholder logo image -->
-            <img src="images/logo.jpg" alt="default logo for now">
+            <img src="images/icons/logo.jpg" alt="default logo for now">
             <nav class="header-main-nav">
                 <ul>
                     <li><a href="index.html">HOME</a></li>
@@ -38,9 +28,19 @@
         <div class="header-main-sm">
             <a href="https://www.linkedin.com/in/adrian--mena/" target="_blank"><div class="header-main-sm-linkedin"></div></a>
             <a href="https://github.com/Cyqaas" target="_blank"><div class="header-main-sm-github"></div></a>
-            <div class="burger-menu-btn"></div>
+            <div id="burger-menu-btn" class="burger-menu-btn"></div>
         </div>        
     </header>
+
+    <!-- Burger Menu Start -->
+    <nav id="burger-menu" class="burger-menu">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">PROJECTS</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
 
     <!-- Main Page Content -->
     <main class="main">
@@ -152,6 +152,6 @@
         </div>
     </footer>
 
-    <script src="index.js"> </script>
+    <script src="js/main.js"> </script>
 </body>
 </html>

@@ -29,7 +29,7 @@ body:after {
     width: 0; 
     overflow: hidden;
     z-index: -1;
-    content: url(../images/In-Blue-21.png)
+    content: url(../images/icons/In-Blue-21.png)
 }
 
 .wrapper-main {
@@ -137,19 +137,19 @@ a {
 .header-main-sm-linkedin {
     height: 30px;
     width: 30px;
-    background-image: url(../images/In-Black-21.png);
+    background-image: url(../images/icons/In-Black-21.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .header-main-sm-linkedin:hover {
-    background-image: url(../images/In-Blue-21.png);
+    background-image: url(../images/icons/In-Blue-21.png);
 }
 
 .header-main-sm-github {
     height: 30px;
     width: 30px;
-    background-image: url(../images/github-mark.png);
+    background-image: url(../images/icons/github-mark.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -211,9 +211,48 @@ a {
     /* Burger */
     .burger-menu-btn {
         display: block;
-        width: 50px;
-        height: 50px;
-        background-image: url();
+        width: 40px;
+        height: 40px;
+        background-image: url(../images/icons/hamburger.svg), url(../images/icons/exit.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center, center left 50px;
+
+    }
+
+    .burger-menu {
+        display: none; 
+        position: fixed;
+        width: 100%;
+        height: 100vh; 
+        z-index: 900; 
+        background-color: #313131;
+    }
+
+    .burger-menu ul {
+        width: 100%; 
+        height: calc(100vh - 60px);
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+    
+    .burger-menu ul li {
+        flex-basis: 100%;
+        border-top: 2px solid #000;
+    }
+
+    .burger-menu ul li:last-child {
+        border-bottom: 2px solid #000;
+    }
+
+    .burger-menu ul li a {
+        display: block;
+        height: 100%;
+        text-align: center;
+        font-size: 3rem;
+        padding: 30px 0; 
+        flex-basis: 100%;
     }
 
     /* Main Wrapper */
