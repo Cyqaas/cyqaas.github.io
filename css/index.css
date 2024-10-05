@@ -170,6 +170,7 @@ main .main-quotes p:nth-child(2) {
 }
 
 .index-about-me-text p {
+    max-width: 350px; 
     padding: 1vh 0;
 }
 
