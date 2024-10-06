@@ -1,0 +1,32 @@
+main {
+    height: calc(100vh - 60px);
+    width: 100%; 
+    background-color: #333;
+    background-image: url(../images/about-me-background-dimmed-85.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main .main-flex {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+main .main-intro {
+    text-align: center;
+    padding-top: 10vh;
+    flex-basis: 100%;
+}
+
+main h1 {
+    font-size: 5rem;
+    line-height: 1.25;
+    margin-bottom: 20px;
+}
+
+main p {
+    padding: 0 20px;
+    line-height: 2;
+}
