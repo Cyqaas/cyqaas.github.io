@@ -30,3 +30,82 @@ main p {
     padding: 0 20px;
     line-height: 2;
 }
+
+.education-section-main {
+    background-color: #fff;
+    width: 100%; 
+    text-align: center;
+    padding: 3vh 0;
+}
+
+.education-section-main p {
+    color: #000;
+}
+
+.education-section-main-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 2vh;
+    color: #000;
+}
+
+.education-main-box {
+    height: 20vh; 
+    width: 100%; 
+    background-color: var(--site-color-1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    position: relative;
+}
+
+.education-main-box-h3 {
+    font-size: 3rem;
+    color: #fff;
+}
+.dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; 
+    bottom: 0;
+    background-color: #000; 
+    opacity: 0.5;
+    transition: all ease-in-out 200ms;
+}
+
+.education-main-box:hover .dark-overlay 
+{
+    opacity: 0; 
+}
+
+.education-main-box:nth-child(2) {
+    background-image: url(../images/education-campus.jpg);
+}
+
+.education-main-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2vh;
+}
+
+.education-main-text-h3 {
+    flex-basis: 100%;
+    color: #000;
+}
+
+
+.education-graduation img {
+    width: 100%;
+}
+
+.education-graduation p {
+    padding-top: 1vh;
+    font-style: italic;
+}
