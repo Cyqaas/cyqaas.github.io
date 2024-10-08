@@ -31,27 +31,24 @@ main p {
     line-height: 2;
 }
 
-.education-section-main {
-    background-color: #fff;
-    width: 100%; 
-    text-align: center;
-    padding: 3vh 0;
-}
+/* Main elements to be repeatedly used */
 
-.education-section-main p {
-    color: #000;
-}
-
-.education-section-main-flex {
+.main-flex {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     row-gap: 2vh;
-    color: #000;
 }
 
-.education-main-box {
+.main-section {
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 3vh 0;
+}
+
+.main-box {
     height: 20vh; 
     width: 100%; 
     background-color: var(--site-color-1);
@@ -63,9 +60,8 @@ main p {
     position: relative;
 }
 
-.education-main-box-h3 {
+.main-box-h3 {
     font-size: 3rem;
-    color: #fff;
 }
 .dark-overlay {
     position: absolute;
@@ -78,34 +74,50 @@ main p {
     transition: all ease-in-out 200ms;
 }
 
-.education-main-box:hover .dark-overlay 
+.main-box:hover .dark-overlay 
 {
     opacity: 0; 
 }
 
-.education-main-box:nth-child(2) {
-    background-image: url(../images/education-campus.jpg);
-}
-
-.education-main-text {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    row-gap: 2vh;
-}
-
-.education-main-text-h3 {
+.main-text-h3-black {
     flex-basis: 100%;
     color: #000;
 }
 
-
-.education-graduation img {
-    width: 100%;
+.main-text-h3-white {
+    flex-basis: 100%;
 }
 
-.education-graduation p {
-    padding-top: 1vh;
-    font-style: italic;
+/* Education section and Hobbies Section*/
+.education-section-main, .hobbies-section-main {
+    background-color: #fff;
+}
+
+.education-section-main p, .hobbies-section-main p {
+    color: #000;
+}
+
+.hobbies-section-main h4 {
+    color: #000;
+}
+
+.education-section-main .main-box{
+    background-image: url(../images/education-campus.jpg);
+}
+
+.hobbies-section-main .main-box:nth-of-type(1) {
+    background-image: url(../images/hobbies-lifting.jpg)
+}
+
+.hobbies-section-main .main-box:nth-of-type(2) {
+    background-image: url(../images/hobbies-gaming.jpg);
+}
+
+/* Work experience section */
+.work-experience-main {
+    background-color: var(--site-color-1);
+}
+
+.work-experience-main .main-box {
+    background-image: url(../images/work-experience-in-n-out.jpg);
 }
