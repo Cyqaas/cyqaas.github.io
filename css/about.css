@@ -54,6 +54,7 @@ main p {
     background-color: var(--site-color-1);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;    
@@ -101,7 +102,7 @@ main p {
     color: #000;
 }
 
-.education-section-main .main-box{
+.education-section-main .main-box {
     background-image: url(../images/education-campus.jpg);
 }
 
@@ -120,4 +121,45 @@ main p {
 
 .work-experience-main .main-box {
     background-image: url(../images/work-experience-in-n-out.jpg);
+}
+
+@media only screen and (min-width: 1200px) {
+
+    main .main-intro h1 {
+        font-size: 9.6rem;
+        line-height: 1.1;
+        margin-bottom: 30px;
+    }
+
+    main .main-intro p {
+        line-height: 2;
+        max-width: 400px;
+    }
+
+    main .main-intro {
+        position: relative;
+        top: 25vh;
+        right: 45vh; 
+        text-align: left;
+    }
+
+    main p {
+        padding: 0 0; 
+    }
+
+    .main-flex p {
+        width: 700px;
+    }
+
+    .main-box {
+        height: 50rem;
+    }
+
+    .main-section img {
+        width: 500px;
+    }
+
+    .main-section video {
+        width: 500px;
+    }
 }
